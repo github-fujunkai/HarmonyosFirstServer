@@ -1,5 +1,27 @@
 下面是启动服务的命令（Windows 环境）：
 
+为了让 Node.js 服务在修改代码后能够自动更新重启，我们通常使用 nodemon 这个工具
+。我已经为你配置好了。
+
+
+"scripts": {
+  "start": "node src/server.js",
+  "dev": "nodemon src/server.js"
+}
+现在服务正在通过 nodemon 运行。
+你可以尝试在 server.js 中随意修改一点内容并保存文件，保存后你会在终端看到 nodemon 自动检测到了文件变动并为你重启了服务！
+
+
+
+直接运行   npm run dev
+
+
+
+
+
+
+
+
 - 进入项目目录
   - cd d:\Project\HarmonyOS\node_server
 - 安装依赖（首次或依赖变化时）
